@@ -1,1 +1,70 @@
+@import './fonts.scss';
 
+.feedback {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 50px 10px;
+    gap: 28px;
+  }
+
+  .feedback_section {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      color: #f5f7f8;
+    }
+
+    .feedback_title {
+      font-family: 'Jeff Script';
+      @media screen and (max-width: 767px) {
+        transform: rotate(-4.77deg);
+        font-size: 36px;
+      }
+    }
+
+    .feedback_text {
+      font-family: 'Montserrat';
+      line-height: 1.4;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 355px;
+    color: #705a66;
+
+    .feedback_button {
+      color: #705a66;
+      background-color: #f5eee0;
+      padding: 16px 19px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: Montserrat;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/images/feedback_mobile@2x.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    input,
+    textarea {
+      padding: 16px 19px;
+      border-radius: 10px;
+      font-family: Montserrat;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 180px;
+    }
+  }
+}
