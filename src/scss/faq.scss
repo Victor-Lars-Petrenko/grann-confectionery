@@ -1,1 +1,103 @@
+.faq{
+    background-color: #F5F7F8;
+    color: #705A66;
+    padding: 100px 10px;
+    @media (min-width: 1440px) {
+      padding: 120px 206px 69px 206px;
+    }
+}
 
+
+.faq__title{
+    margin-bottom: 48px;
+    font-family: "Alumni Sans";
+    text-align: center;
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    @media (min-width: 375px) {
+      font-size: 80px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 64px;
+      font-size: 100px;
+      line-height: 1.1;
+    }
+}
+
+.faq__accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    
+    color: #705A66;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3333;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #705A66;
+    outline: none;
+    transition: 0.4s;
+    @media (min-width: 1440px) {
+        font-size: 24px;
+        letter-spacing: 0;
+        padding-bottom: 24px;
+    }
+
+  }
+
+  
+.faq__accordion:not(:first-child) {
+    margin-top: 40px;
+    @media (min-width: 1440px) {
+      margin-top: 56px;
+    }
+}
+
+.faq__question{
+  text-align: left;
+  width: 272px;
+  @media (min-width: 420px) {
+    width: 100%;
+  }
+}
+  
+.faq__panel {
+    padding-top: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+  }
+
+  .faq__answer{
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+    @media (min-width: 1440px) {
+      font-size: 18px;
+      line-height: 1.3333;
+  
+    }
+
+  }
+
+.faq__icon {
+    transition: transform 0.3s ease;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+.faq__accordion.faq__active .faq__icon {
+    transform: rotate(180deg);
+}
