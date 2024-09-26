@@ -1,0 +1,179 @@
+.why-us {
+  padding: 50px 0;
+
+  background-image: url(../images/why-us/fon.svg);
+  background-size: 1642px auto;
+  background-position: 54% -5%;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: 1440px) {
+    background-size: 1628px auto;
+    background-position: 40% -10%;
+    padding: 60px 0;
+  }
+}
+.why-us__container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @media (min-width: 1440px) {
+    position: relative;
+    padding: 0 166px;
+    gap: 94px;
+  }
+}
+
+.why-us__title {
+  color: #705a66;
+  text-align: center;
+  font-family: 'Alumni Sans';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+
+  @media (min-width: 1440px) {
+    font-size: 100px;
+    line-height: 1.1;
+  }
+}
+.why-us__benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 84px 388px;
+
+    :first-child {
+      width: 288px;
+
+      .why-us__text {
+        width: 287px;
+      }
+    }
+
+    :nth-child(2) {
+      width: 393px;
+
+      .why-us__subtitle {
+        width: 393px;
+        text-align: center;
+      }
+
+      .why-us__text {
+        width: 287px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+
+    :last-child {
+      width: 499px;
+
+      .why-us__subtitle {
+        width: 499px;
+        text-align: center;
+      }
+
+      .why-us__text {
+        width: 499px;
+      }
+    }
+  }
+}
+.why-us__benefits-item {
+}
+
+.why-us__subtitle {
+  color: #705a66;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.why-us__text {
+  color: #705a66;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.37;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+.why-us__paragraph {
+  display: block;
+  margin-top: 16px;
+
+  @media (min-width: 1440px) {
+    margin-top: 24px;
+  }
+}
+
+.why-us__picture-cake {
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+.why-us__cake-img {
+  width: 354px;
+  height: 370px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    width: 654px;
+    height: 536px;
+  }
+}
+
+.why-us__autograph {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  @media (min-width: 1440px) {
+    padding-top: 73px;
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+    white-space: normal;
+    clip-path: none;
+    clip: auto;
+    overflow: visible;
+  }
+}
