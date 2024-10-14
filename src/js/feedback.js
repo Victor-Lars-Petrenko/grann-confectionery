@@ -8,7 +8,7 @@ document
     const message = document.getElementById('message').value;
 
     // Валідація
-    if (name === '' || phone === '' || message === '') {
+    if (name.trim() === '' || phone.trim() === '' || message.trim() === '') {
       alert('Будь ласка, заповніть усі поля');
       return;
     }
