@@ -1,1 +1,2 @@
-import "./faq.js"
+import './faq.js';
+import './feedback.js';
