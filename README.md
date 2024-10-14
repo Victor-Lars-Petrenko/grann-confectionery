@@ -1,4 +1,4 @@
-# <img src="./src/images/footer/grann-logo.png" alt="logo" width="100" height="100" >
+# <img src="./src/assets/images/footer/grann-logo.png" alt="logo" width="255" height="201" >
 
 ## Eng
 

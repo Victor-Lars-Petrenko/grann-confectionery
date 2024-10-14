@@ -3,7 +3,7 @@
 .feedback {
   .feedback_section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/images/feedback_mobile@2x.jpg);
+      url(/assets/images/feedback/feedback_mobile@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
     @media (min-width: 1024px) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/images/feedback_desc@2x.jpg);
+        url(/assets/images/feedback/feedback_desc@2x.jpg);
       flex-direction: row;
       justify-content: center;
       gap: 40px;
@@ -24,7 +24,7 @@
 
     @media (min-width: 1440px) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/images/feedback_desc@2x.jpg);
+        url(/assets/images/feedback/feedback_desc@2x.jpg);
       flex-direction: row;
       justify-content: center;
       gap: 120px;
