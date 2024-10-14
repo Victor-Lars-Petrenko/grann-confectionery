@@ -1,1 +1,104 @@
+.footer {
+  background-color: var(--main-brown);
+  width: 100%;
+  padding: 64px 0 100px;
 
+  @media (min-width: 1440px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 144px 100px 94px;
+  }
+
+  .footer__logo-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 48px;
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      top: 88px;
+      width: calc(100% - 200px);
+    }
+  }
+
+  .footer__address {
+    margin-bottom: 40px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 0;
+      padding-top: 20px;
+    }
+
+    .footer__address__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      @media (min-width: 1440px) {
+        align-items: flex-start;
+      }
+
+      .footer_contact {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 137%;
+        color: var(--main-white);
+
+        @media (min-width: 1440px) {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.33;
+        }
+      }
+    }
+  }
+
+  .footer__links {
+    .footer__socials-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      @media (min-width: 1440px) {
+        margin-bottom: 32px;
+        justify-content: flex-start;
+      }
+
+      .footer_socials-icon {
+        fill: var(--main-white);
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    .footer__docs-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      @media (min-width: 1440px) {
+        align-items: flex-start;
+      }
+
+      .footer_doc-link {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 137%;
+        color: var(--main-white);
+
+        @media (min-width: 1440px) {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.33;
+        }
+      }
+    }
+  }
+}
