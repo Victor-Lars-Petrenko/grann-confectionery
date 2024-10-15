@@ -7,7 +7,7 @@
   align-items: center;
   h3 {
     font: 600 80px / 1 'Alumni Sans', sans-serif;
-    color: #705a66;
+    color: var(--main-brown);
     text-align: center;
     margin-bottom: 51px;
   }
@@ -40,7 +40,7 @@
       justify-content: center;
       align-items: center;
       padding: 10px 20px 10px 15px;
-      border: 1px solid #705a66;
+      border: 1px solid var(--main-brown);
       border-radius: 22px;
       background-color: var(--main-pastel);
       &:hover {
@@ -88,7 +88,7 @@
       padding: 23px 0 20px 0;
       text-transform: uppercase;
       text-align: center;
-      color: #705a66;
+      color: var(--main-brown);
       background-color: var(--main-pastel);
       &:hover {
         opacity: 0.6;
