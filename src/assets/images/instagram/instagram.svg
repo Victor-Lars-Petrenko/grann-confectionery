@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-prev" viewBox="0 0 168 32">
+      <path fill="#705a66" d="M2.586 17.414a2 2 0 0 1 0-2.828L15.314 1.858a2 2 0 1 1 2.828 2.828L6.828 16l11.314 11.314a2 2 0 1 1-2.828 2.828L2.586 17.414zM168 18H4v-4h164v4z" style="fill:var(--color1, #705a66)"/>
+    </symbol>
+    <symbol id="icon-next" viewBox="0 0 168 32">
+      <path fill="#705a66" d="M165.414 17.414a2 2 0 0 0 0-2.828L152.686 1.858a2 2 0 1 0-2.828 2.828L161.172 16l-11.314 11.314a2 2 0 1 0 2.828 2.828l12.728-12.728zM0 18h164v-4H0v4z" style="fill:var(--color1, #705a66)"/>
+    </symbol>
+    <symbol id="icon-Vector-36" viewBox="0 0 27 32">
+      <path fill="none" stroke="#705a66" stroke-linecap="round" stroke-width="1.021" d="M3.857.681c-3.976.431-3.392 9.438-2.612 11.911 1.801 5.713 6.774 10.258 11.891 9.546m0 0c1.93-.269 3.881-1.286 5.69-3.271 2.587-2.84 2.031-9.329-3.014-8.382-5.806 1.089-4.925 6.903-2.676 11.653zm0 0c1.091 2.304 2.503 4.359 3.63 5.503 1.374 1.394 4.546 2.619 7.119 2.442m0-.001c.82-.056 1.579-.255 2.2-.636m-2.2.636c.793-.358 1.679-.744 2.204-.929m-2.204.929c-.51.23-.981.45-1.292.597-3.23 1.531 1.901-.089 2.964-.686.308-.173.473-.357.528-.547m0 0c.095-.058.187-.121.275-.188.364-.276.179-.264-.271-.105m-.004.293a.56.56 0 0 0 .004-.293m0 0c-.237-.982-2.825-2.034-3.245-2.444" style="stroke:var(--color1, #705a66)"/>
+    </symbol>
+    <symbol id="icon-Vector-35" viewBox="0 0 66 32">
+      <path fill="none" stroke="#705a66" stroke-linecap="round" stroke-width="7.385" d="M8.664 27.077C-9.457 22.774 43.167 4.923 61.538 4.923" style="stroke:var(--color1, #705a66)"/>
+    </symbol>
+    <symbol id="icon-Vector-34" viewBox="0 0 34 32">
+      <path fill="none" stroke="#705a66" stroke-linecap="round" stroke-width="3.429" d="M2.286 29.714c.43-4.631 5.065-7.364 8.018-10.159C17.258 12.974 23.911 7.037 32 2.285" style="stroke:var(--color1, #705a66)"/>
+    </symbol>
+  </defs>
+</svg>
