@@ -7,14 +7,22 @@ document
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
 
-    // Валідація
+    // Validation
     if (name.trim() === '' || phone.trim() === '' || message.trim() === '') {
       alert('Будь ласка, заповніть усі поля');
       return;
     }
 
-    // Відправка даних на сервер через Fetch API
+    const validPhone = /^\+380\d{9}$/;
 
+    if (!validPhone.test(phone)) {
+      alert(
+        'Будь ласка, введіть коректний номер телефону у форматі +380XXXXXXXXX'
+      );
+      return;
+    }
+
+    // Sending data to the server via the Fetch API
     fetch('https://feedback-server-cyan.vercel.app/api/feedback', {
       method: 'POST',
       headers: {
