@@ -27,7 +27,7 @@
 }
 
 .why-us__title {
-  color: #705a66;
+  color: var(--main-brown);
   text-align: center;
   font-family: 'Alumni Sans';
   font-size: 80px;
@@ -41,11 +41,14 @@
   }
 }
 .why-us__benefits-list {
+  max-width: 708px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 0 auto;
 
   @media (min-width: 1440px) {
+    max-width: 1439px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,7 +93,7 @@
 }
 
 .why-us__subtitle {
-  color: #705a66;
+  color: var(--main-brown);
   text-align: center;
   font-family: Montserrat;
   font-size: 18px;
@@ -107,7 +110,7 @@
   }
 }
 .why-us__text {
-  color: #705a66;
+  color: var(--main-brown);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
