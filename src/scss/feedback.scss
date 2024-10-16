@@ -3,7 +3,7 @@
 .feedback {
   .feedback_section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/assets/images/feedback/feedback_mobile@2x.jpg);
+      url(/assets/images/feedback/feedback_mobile@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,18 +13,32 @@
     padding: 50px 10px;
     gap: 28px;
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/assets/images/feedback/feedback_mobile@2x.jpg);
+    }
+
     @media (min-width: 1024px) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/assets/images/feedback/feedback_desc@2x.jpg);
+        url(/assets/images/feedback/feedback_desc@1x.jpg);
       flex-direction: row;
       justify-content: center;
       gap: 40px;
       margin-right: 100px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(/assets/images/feedback/feedback_desc@2x.jpg);
+    }
+
+    @media (min-width: 1440px) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/assets/images/feedback/feedback_desc@1x.jpg);
       flex-direction: row;
       justify-content: center;
       gap: 120px;
