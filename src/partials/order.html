@@ -1,8 +1,73 @@
 <section class="order">
-    <section class="order__container"></section>
-    <article class="order__text-info">
-        <a href="../catalog-page.html" class="order__text-info-link">Продовжити покупки</a>
-        <h1 class="order__text-info-big-title"> Оформлення замовлення</h1>
+    <section class="order__container">
+        <article class="order__text-info">
+            <a href="../catalog-page.html" class="order__text-info-link">Продовжити покупки</a>
+            <h1 class="order__text-info-big-title"> Оформлення замовлення</h1>
+        </article>
+        <article class="order__contacts">
+            <h3 class="order__text-info-small-title">Контакти:</h3>
+            <form class="order__contacts-form">
+                <input type="text" placeholder="Ім'я">
+                <input type="tel" placeholder="Номер телефону">
+                <input type="email" placeholder="E-mail">
+                <input type="date" placeholder="Дата доставки">
+            </form>
+        </article>
+        <article class="order__sposyb-dostavka">
+            <h3 class="order__text-info-small-title">Спосіб доставки</h3>
+            <form class="order__sposyb-dostavka-form--1">
+                <input type="radio" id="option1" name="group1" value="option1">
+                <label for="option1">Самовивіз з Печерського р-ну, м. Київ.</label><br>
+                <input type="radio" id="option2" name="group1" value="option2">
+                <label for="option2">На таксі (за тарифами служби таксі) </label><br>
+            </form>
+            <form class="order__sposyb-dostavka-form--2">
+                
+                <input type="search" id="city" name="city" list="city-options" placeholder="Місто">
+                <datalist id="city-options">
+                    <option value="Київ">
+                    <option value="Львів">
+                    <option value="Одеса">
+                    <option value="Харків">
+                </datalist>
+                <input type="text" placeholder="Вулиця">
+                <input type="number" placeholder="Будинок">
+                <input type="number" placeholder="Під'їзд">
+                <input type="number" placeholder="Корпус">
+                <input type="number" placeholder="Квартира"> 
+                <input type="number" placeholder="Поверх">
+            </form>
+        </article>
+        <article class="order__sposyb-oplata">
+            <h3 class="order__text-info-small-title">Спосіб оплати</h3>
+            <form class="order__sposyb-oplata-form">
+                <input type="radio" id="option1" name="group2" value="option1">
+                <label for="option1">Готівка</label><br>
+                <input type="radio" id="option2" name="group2" value="option2">
+                <label for="option2">Оплата картою </label><br>
+
+                <textarea
+                id="message"
+                name="message"
+                placeholder="Додати коментар"
+                required
+              ></textarea>
+            </form>
+        </article>
+        <article class="order__oformlennya">
+        <h3 class="order__text-info-small-title">Всього до сплати: 
+            <span>0 грн</span></h3>
+            <button type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
     </article>
-   
+    <article class="order__summary">
+        <h3 class="order__summary-title">Ваше замовлення:</h3>
+        <ul class="order__list">
+            <li class="order__item">
+                <span class="order__item-name">Торт "Наполеон"</span>
+                <span class="order__item-price">750 грн</span>
+            </li>
+        </ul>
+        <button class="order__add-item" type="submit">Додати товар</button>
+    </article>
+    </section>
 </section>
