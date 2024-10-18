@@ -1,17 +1,16 @@
+@import './fonts.scss';
 $main-brown-color:#705A66;
 
-@mixin big-title(){
 
-font-family: 'Alumni Sans', sans-serif;
-font-size: 100px;
-font-weight: 600;
-line-height: 110px;
-
-}
 
 
 .order__container{
     max-width: 100% ;
     width: 375px ;
-    margin: 24px 100px 120px 100px ;
+    margin: 24px 10px 120px 10px ;
+}
+
+.order-form{
+    display: flex;
+    flex-direction: column;
 }
