@@ -1,0 +1,18 @@
+(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const e of n)if(e.type==="childList")for(const d of e.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&i(d)}).observe(document,{childList:!0,subtree:!0});function o(n){const e={};return n.integrity&&(e.integrity=n.integrity),n.referrerPolicy&&(e.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?e.credentials="include":n.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function i(n){if(n.ep)return;n.ep=!0;const e=o(n);fetch(n.href,e)}})();const h=document.querySelectorAll(".faq__accordion");h.forEach(t=>{t.addEventListener("click",()=>p(t))});function p(t){t.classList.toggle("faq__active");const l=t.nextElementSibling;l.style.maxHeight?l.style.maxHeight=null:l.style.maxHeight=l.scrollHeight+"px"}document.getElementById("feedbackForm").addEventListener("submit",function(t){t.preventDefault();const l=document.getElementById("name").value,o=document.getElementById("phone").value,i=document.getElementById("message").value;if(l.trim()===""||o.trim()===""||i.trim()===""){alert("Будь ласка, заповніть усі поля");return}if(!/^\+380\d{9}$/.test(o)){alert("Будь ласка, введіть коректний номер телефону у форматі +380XXXXXXXXX");return}fetch("https://feedback-server-cyan.vercel.app/api/feedback",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:l,phone:o,message:i})}).then(e=>e.json()).then(e=>{console.log("Success:",e),alert(e.message||"Дякуємо! Ваше повідомлення було надіслано."),document.getElementById("feedbackForm").reset()}).catch(e=>{console.error("Error:",e),alert("Сталася помилка при надсиланні форми.")})});const v=document.querySelector(".gallery"),c=document.querySelectorAll(".gallery_item"),E=document.querySelectorAll(".ellipses"),r=document.getElementById("next"),a=document.getElementById("prev");console.log(c.offsetWidth);let s=0;function u(){r.disabled=s>=c.length-1,a.disabled=s<=0,r.style.opacity=r.disabled?.5:1,a.style.opacity=a.disabled?.5:1}r.addEventListener("click",()=>{s<c.length-1&&(s++,f()),u(),m()});a.addEventListener("click",()=>{s>0&&(s--,f()),u(),m()});function f(){const t=c[0].offsetWidth,l=20,o=c.length;let i;s===o-1?i=-(t*s):i=-(t+l)*s,v.style.transform=`translateX(${i}px)`}function m(){E.forEach((t,l)=>{t.classList.toggle("active",l===s)})}u();m();const b=document.getElementById("menu-button"),g=document.getElementById("menu"),L=document.getElementById("close-button");b.addEventListener("click",()=>{g.classList.toggle("active")});L.addEventListener("click",()=>{g.classList.toggle("active")});function y(){const t=document.querySelector(".menu-list");t.innerHTML="",window.innerWidth>=1024?t.innerHTML=`
+
+    <div class="menu-tablet-block">
+        <li><a class="menu-list-item" href="./catalog-page.html">Каталог</a></li>
+      <li><a class="menu-list-item" href="#about">Про мене</a></li>
+      </div>
+       <div class="menu-tablet-block">
+      <li><a class="menu-list-item" href="#delivery">Доставка</a></li>
+      <li><a class="menu-list-item" href="#contacts">Контакти</a></li>
+      </div>
+
+        `:t.innerHTML=`
+      <li><a class="menu-list-item" href="#">Бестселлери</a></li>
+      <li><a class="menu-list-item" href="#">Каталог</a></li>
+      <li><a class="menu-list-item" href="#">Доставка</a></li>
+      <li><a class="menu-list-item" href="#">Про мене</a></li>
+      `}y();window.addEventListener("resize",y);
+//# sourceMappingURL=main-CiyiMvgj.js.map

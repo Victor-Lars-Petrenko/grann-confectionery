@@ -19,11 +19,73 @@
       content="Grann offers a wide selection of delicious desserts, from bestsellers to unique creations. Enjoy fast delivery, excellent quality, and great customer feedback. Discover why customers choose us for their dessert cravings."
     />
     <title>Grann</title>
-    <script type="module" crossorigin src="/grann-confectionery/assets/main-1XwPiurN.js"></script>
-    <link rel="stylesheet" crossorigin href="/grann-confectionery/assets/main-ByhtgcNh.css">
+    <script type="module" crossorigin src="/grann-confectionery/assets/main-CiyiMvgj.js"></script>
+    <link rel="stylesheet" crossorigin href="/grann-confectionery/assets/main-mKEX7zRq.css">
   </head>
   <body>
-    <header></header>
+    <header>
+  <div class="logo-container">
+    <a href="./index.html">
+      <picture>
+        <source
+          srcset="/grann-confectionery/assets/logo_mobile@1x-8Js-Fzi2.png 1x, /grann-confectionery/assets/logo_mobile@2x-CYVcJPA2.png 2x"
+        />
+        <img
+          class="header_logo"
+          src="/grann-confectionery/assets/logo_mobile@1x-8Js-Fzi2.png"
+          width="91"
+          height="79"
+          alt="Grann logo"
+        />
+      </picture>
+    </a>
+  </div>
+
+  <div class="header-nav">
+    <button class="menu-button" type="button" id="menu-button">
+      <svg class="burger">
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button class="cart-button" type="button" id="cart-button">
+      <svg class="header-cart">
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-cart"></use>
+      </svg>
+    </button>
+
+    <nav class="menu" id="menu">
+      <button class="close-button" type="button" id="close-button">
+        <svg class="close-icon">
+          <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-list">
+        <li><a class="menu-list-item" href="#bestsellers">Бестселлери</a></li>
+        <li>
+          <a class="menu-list-item" href="./catalog-page.html">Каталог</a>
+        </li>
+        <li><a class="menu-list-item" href="#delivery">Доставка</a></li>
+        <li><a class="menu-list-item" href="#about">Про мене</a></li>
+      </ul>
+      <div class="menu-pics">
+        <p class="menu-text">from Grann with love</p>
+        <picture>
+          <source
+            srcset="../assets/images/header/mobile-menu-cake@1x.png 1x, ../assets/images/header/mobile-menu-cake@2x.png 2x"
+          />
+          <img
+            src="../assets/images/header/mobile-menu-cake@1x.png"
+            alt="cake"
+            width="206"
+            height="216"
+          />
+        </picture>
+      </div>
+    </nav>
+  </div>
+</header>
 
     <main>
       <section class="hero">
@@ -32,7 +94,7 @@
 
       <section class="dessert-types"></section>
 
-      <section class="bestsellers"></section>
+      <section class="bestsellers" id="bestsellers"></section>
 
       <section class="why-us">
   <div class="why-us__container">
@@ -104,9 +166,9 @@
   </picture>
 </section>
 
-      <section class="delivery"></section>
+      <section class="delivery" id="delivery"></section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="about__container">
     <h2 class="about__title">Про мене</h2>
 
@@ -196,7 +258,7 @@
         Скільки часу потрібно для виготовлення замовлення?
       </p>
       <svg class="faq__icon">
-        <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-arrow"></use>
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-arrow"></use>
       </svg>
     </button>
     <div class="faq__panel">
@@ -208,7 +270,7 @@
     <button class="faq__accordion">
       <p class="faq__question">Чи є y вас доставка?</p>
       <svg class="faq__icon">
-        <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-arrow"></use>
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-arrow"></use>
       </svg>
     </button>
     <div class="faq__panel">
@@ -231,7 +293,7 @@
     <button class="faq__accordion">
       <p class="faq__question">Чи готуєте ви торти з мастики?</p>
       <svg class="faq__icon">
-        <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-arrow"></use>
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-arrow"></use>
       </svg>
     </button>
     <div class="faq__panel">
@@ -251,7 +313,7 @@
     <button class="faq__accordion">
       <p class="faq__question">Чи можна їсти ваші торти дітям та вагітним?</p>
       <svg class="faq__icon">
-        <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-arrow"></use>
+        <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-arrow"></use>
       </svg>
     </button>
     <div class="faq__panel">
@@ -398,7 +460,7 @@
 </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
   <div class="footer__logo-wrap">
     <picture>
       <source
@@ -449,7 +511,7 @@
           rel="noreferrer noopener"
         >
           <svg class="footer_socials-icon">
-            <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-instagram"></use>
+            <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -461,7 +523,7 @@
           rel="noreferrer noopener"
         >
           <svg class="footer_socials-icon">
-            <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-telegram"></use>
+            <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
@@ -473,7 +535,7 @@
           rel="noreferrer noopener"
         >
           <svg class="footer_socials-icon">
-            <use href="/grann-confectionery/assets/icons-BYt4ge6-.svg#icon-whatsapp"></use>
+            <use href="/grann-confectionery/assets/icons-VkLNm6rG.svg#icon-whatsapp"></use>
           </svg>
         </a>
       </li>
